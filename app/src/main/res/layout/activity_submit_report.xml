@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubmitReport">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Incident Type Title -->
+            <TextView
+                android:id="@+id/titleIncidentType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incident Type *"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp" />
+
+            <!-- Incident Type -->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioWildfire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wildfire" />
+
+                <RadioButton
+                    android:id="@+id/radioBlackIce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Black Ice" />
+            </RadioGroup>
+
+            <!-- Location Title -->
+            <TextView
+                android:id="@+id/titleLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location *"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <Spinner
+                android:id="@+id/spinnerAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp" />
+
+            <!-- Severity Title -->
+            <TextView
+                android:id="@+id/titleSeverity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Severity *"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <Spinner
+                android:id="@+id/spinnerSeverity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp" />
+
+            <!-- Wildfire Size -->
+            <TextView
+                android:id="@+id/titleWildfireSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wildfire Size (in acres) *"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:paddingTop="16dp" />
+
+            <Spinner
+                android:id="@+id/spinnerSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <!-- Date Picker -->
+            <TextView
+                android:id="@+id/titleDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date *"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:id="@+id/textDatePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:hint="Select Date"
+                android:minHeight="48dp"
+                android:padding="12dp"
+                android:textSize="16sp" />
+
+            <!-- Buttons -->
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginTop="16dp" />
+            <Button
+                android:id="@+id/buttonHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

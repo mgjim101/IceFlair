@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmergencyChecklist">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/switchToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:height="48dp"
+                android:checked="true"
+                android:text="Wildfire Checklist" />
+
+            <LinearLayout
+                android:id="@+id/wildfireChecklist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wildfire Emergency Checklist"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="16dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxWater"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Water *" />
+                <CheckBox
+                    android:id="@+id/checkBoxFirstAid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="First Aid Kit *" />
+                <CheckBox
+                    android:id="@+id/checkBoxProtectiveClothing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Protective Clothing" />
+                <CheckBox
+                    android:id="@+id/checkBoxFireExtinguisher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fire Extinguisher" />
+                <CheckBox
+                    android:id="@+id/checkBoxCommunicationDevice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Communication Device (e.g., Radio)" />
+                <CheckBox
+                    android:id="@+id/checkBoxEmergencyBlanket"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Emergency Blanket" />
+                <CheckBox
+                    android:id="@+id/checkBoxNonPerishableFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Non-Perishable Food" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/blackIceForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Black Ice and Snowstorm Checklist"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="16dp" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxSnowChains"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Snow Chains or Tires" />
+                <CheckBox
+                    android:id="@+id/checkBoxIceScraper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ice Scraper and De-Icer" />
+                <CheckBox
+                    android:id="@+id/checkBoxWarmClothing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blankets and Warm Clothing" />
+                <CheckBox
+                    android:id="@+id/checkBoxJumperCables"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jumper Cables" />
+                <CheckBox
+                    android:id="@+id/checkBoxShovel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shovel" />
+                <CheckBox
+                    android:id="@+id/checkBoxFlashlight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Flashlight and Batteries" />
+                <CheckBox
+                    android:id="@+id/checkBoxEmergencyFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Emergency Food and Water" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#D3D3D3"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home" />
+
+            <Button
+                android:id="@+id/buttonShare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#FF5722"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

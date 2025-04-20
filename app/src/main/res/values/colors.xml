@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+
+    <!-- Text and Icon Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+
+    <!-- Drawer Colors -->
+    <color name="color_drawer_item_text">#212121</color> <!-- Dark gray for text -->
+    <color name="color_outline">#BDBDBD</color> <!-- Light gray for dividers -->
+    <color name="color_surface">#F5F5F5</color> <!-- Light gray for surface background -->
+    <color name="color_secondary_container">#FFEBEE</color> <!-- Light red for selection background -->
+</resources>

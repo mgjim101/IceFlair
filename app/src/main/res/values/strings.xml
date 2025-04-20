@@ -1,0 +1,40 @@
+<resources>
+    <!-- App Name -->
+    <string name="IceFlair">341Project</string>
+
+    <!-- Buttons -->
+    <array name="buttons">
+        <item>Selection</item>
+        <item>Submit Report</item>
+        <item>Check Incidents</item>
+        <item>Emergency Checklist</item>
+    </array>
+
+    <!-- Incident Types and Descriptions -->
+    <string name="type">Type of Incident *</string>
+    <string name="wildfire">Wildfire</string>
+    <string name="blackIce">Black Ice</string>
+    <string name="location">Location *</string>
+    <string name="address">Enter Address</string>
+    <string name="longitude">Enter Longitude</string>
+    <string name="latitude">Enter Latitude</string>
+    <string name="severity">Severity (1 = Low, 6 = High) *</string>
+    <string name="severity2">Enter severity (1 to 6)</string>
+    <string name="addDescription">Size in acres</string>
+    <string name="description">Size in acres (small = 500, medium = 1000, large = 2000) [Wildfire ONLY]</string>
+    <string name="dateAndTime">Date *</string>
+    <string name="tapToEnterTime">YYYY-MM-DD</string>
+    <string name="submit">Submit</string>
+    <string name="back">BACK</string>
+    <string name="toggle">Change Incident Reporting</string>
+
+    <!-- Dropdown for Season Selector -->
+    <array name="seasonSelector">
+        <item>Select</item>
+        <item>Fires</item>
+        <item>Black Ice</item>
+    </array>
+
+    <!-- Change Incident Type -->
+    <string name="change">Change Incident Type: </string>
+</resources>
